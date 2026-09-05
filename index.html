@@ -17,22 +17,30 @@
         </style>
     </head>
     <body>
-        <div style="color:white;text-align: center; background-color: rgba(0, 0, 0, 0.7);">
+        <div style="padding: 7px ;color:white;text-align: center; background-color: rgba(0, 0, 0, 0.5);">
             <h1 style="font-size: 5rem;">Pingu Team</h1>
             <h2>Welcome to our landing page!</h2>
             <p>We are a team of passionate developers dedicated to creating innovative solutions and delivering high-quality software products. Our team is composed of skilled professionals with expertise in various programming languages and technologies.</p>
             <p>We believe in collaboration, creativity, and continuous learning. We strive to stay up-to-date with the latest industry trends and best practices to ensure that we deliver cutting-edge solutions to our clients.</p>
             <p>Whether you are looking for web development, mobile app development, or software consulting services, we are here to help you achieve your goals. Contact us today to learn more about how we can assist you in bringing your ideas to life!</p>
         </div>
-        <div style="height:150px;"></div>
-        <footer style="height:250px; width:100% ;color: white;margin: 5px; text-align:left;background: rgb(0, 0, 0, 0.7); border-radius:10px;">
+        <div style="border-radius:15px;margin: 7px;height:350px; background: rgba(255, 255, 255, 0.5);">
+            
+            <h1>vedi altri nostri progetti:</h1>
+            <section style="display: flex">
+                <img src="https://cubeshiftlanding.netlify.app/assets/logo.png" style="margin: 2px; max-width: 100px; height: auto;">
+                <button class="rgb" style="margin:2px;margin-top: 30px; background:rgb(255, 138, 61); border-radius: 30px; height: 40px;" onclick="window.open('//cubeshiftlanding.netlify.app/')">Cubeshift game</button>
+            </section>
+            
+        </div>
+        <footer style="padding: 5px; ;text-shadow: 5px black;height:250px; width:100% ;color: white;margin: 5px; text-align:left;background: rgb(0, 0, 0, 0.7); border-radius:10px;">
             <style>
                 @keyframes glow {
-                0%   { box-shadow: 0 0 5px rgb(0, 159, 159); }
-                25%  { box-shadow: 0 0 10px rgb(0, 201, 147);}
+                0%   { box-shadow: 0 0 5px rgb(255, 0, 0); }
+                25%  { box-shadow: 0 0 10px rgb(251, 255, 0);}
                 50%  { box-shadow: 0 0 20px rgb(0, 201, 107); }
-                75%  { box-shadow: 0 0 10px rgb(0, 255, 94);}
-                100% { box-shadow: 0 0 5px rgb(0, 255, 179); } 
+                75%  { box-shadow: 0 0 10px rgb(0, 110, 255);}
+                100% { box-shadow: 0 0 5px rgb(251, 0, 255); } 
 
 
                 }
@@ -40,12 +48,20 @@
                     animation: glow ease-in-out 1.2s infinite;
                     width:100%
                 }
+                .rgb{
+                    animation: glow ease-in-out 3s infinite;
+                }
             </style>
-            <p>contact us at: info@clipforge.it</p>
+            <p>contact us at</p>
             <br>
             <p>site made by: Luca De Luca</p>
             <br>
-            <p>hosted on neocities </p>
+            <p>hosted on github pages </p>
             <br>
-            <p>Made with love by the pingu team</p>
+            <p style="margin-right: 20px">Made with love by the pingu team</p><button style="margin-right:20px" onclick="messagefortheworld()"></button>
+            <script>
+                function messagefortheworld(){
+                    alert("Yoo sono io, il developer del sito, luca, vedo che hai cliccato quel bottoncino là sotto che ha aperto questo messaggio, volevo solo dire che sono fiero e felicissimo di essere entrato in questo team di sviluppatori, auguro il meglio a tutti, CIAO!")
+                }
+            </script>
         </footer>
